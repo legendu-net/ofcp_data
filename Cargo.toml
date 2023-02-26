@@ -1,0 +1,12 @@
+[package]
+name = "ofcp_data"
+description = "Data for ofcp."
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+max_upload_size = "20M"
+
+[lib]
+name = "ofcp_data"
+path = "src/lib.rs"
+
