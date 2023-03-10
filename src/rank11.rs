@@ -76,6 +76,6 @@ pub fn rank11_0(i0: usize) -> u64 {
 }
 
 #[inline(always)]
-pub fn rank11_1() -> &'static [u64] {
+pub fn rank11_1() -> &'static [u64; 14] {
     &RANK11_1
 }
