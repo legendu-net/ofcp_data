@@ -1231,3 +1231,10 @@ static RANK32_11: [&[u64; 92]; 52] = [
 pub fn rank32_11(i0: usize) -> &'static [u64; 92] {
     RANK32_11[i0]
 }
+
+/// # Safty
+/// 0 <= i0 < 52
+#[inline(always)]
+pub unsafe fn rank32_11_unchecked(i0: usize) -> &'static [u64; 92] {
+    RANK32_11.get_unchecked(i0)
+}

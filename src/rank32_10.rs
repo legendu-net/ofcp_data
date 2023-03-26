@@ -3023,3 +3023,10 @@ static RANK32_10: [Ia<u64>; 52] = [
 pub fn rank32_10(i0: usize) -> Ia<u64> {
     RANK32_10[i0]
 }
+
+/// # Safty
+/// 0 <= i0 < 52
+#[inline(always)]
+pub unsafe fn rank32_10_unchecked(i0: usize) -> Ia<u64> {
+    *RANK32_10.get_unchecked(i0)
+}

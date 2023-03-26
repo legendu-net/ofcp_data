@@ -30130,3 +30130,10 @@ static RANK51_04: [&[u64; 2315]; 52] = [
 pub fn rank51_04(i0: usize) -> &'static [u64; 2315] {
     RANK51_04[i0]
 }
+
+/// # Safty
+/// 0 <= i0 < 52
+#[inline(always)]
+pub unsafe fn rank51_04_unchecked(i0: usize) -> &'static [u64; 2315] {
+    RANK51_04.get_unchecked(i0)
+}

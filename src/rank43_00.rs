@@ -1,4 +1,4 @@
-use crate::get_index_3;
+use crate::{get_index_3, get_index_3_unchecked};
 static _0_1_2: [u64; 52] = [
     37671158153216,
     38766374813696,
@@ -26912,4 +26912,13 @@ static RANK43_00: [&[u64; 52]; 22101] = [
 #[inline(always)]
 pub fn rank44_0(i0: usize, i1: usize, i2: usize, i3: usize) -> u64 {
     RANK43_00[get_index_3(i1, i2, i3)][i0]
+}
+
+/// # Safty
+/// 0 <= i0 < i1 < i2 < i3 < 52
+#[inline(always)]
+pub unsafe fn rank44_0_unchecked(i0: usize, i1: usize, i2: usize, i3: usize) -> u64 {
+    *RANK43_00
+        .get_unchecked(get_index_3_unchecked(i1, i2, i3))
+        .get_unchecked(i0)
 }

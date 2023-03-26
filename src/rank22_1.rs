@@ -216,3 +216,10 @@ static RANK22_1: [&[u64; 14]; 52] = [
 pub fn rank22_1(i0: usize) -> &'static [u64; 14] {
     RANK22_1[i0]
 }
+
+/// # Safty
+/// 0 <= i0 < 52
+#[inline(always)]
+pub unsafe fn rank22_1_unchecked(i0: usize) -> &'static [u64; 14] {
+    RANK22_1.get_unchecked(i0)
+}
