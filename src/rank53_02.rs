@@ -84980,7 +84980,7 @@ pub fn rank53_02(i0: usize, i1: usize, i2: usize) -> &'static [u64] {
     RANK53_02[get_index_3(i0, i1, i2)]
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < i2 < 52
 #[inline(always)]
 pub unsafe fn rank53_02_unchecked(i0: usize, i1: usize, i2: usize) -> &'static [u64] {

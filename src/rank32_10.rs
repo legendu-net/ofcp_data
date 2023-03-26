@@ -3024,7 +3024,7 @@ pub fn rank32_10(i0: usize) -> Ia<u64> {
     RANK32_10[i0]
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < 52
 #[inline(always)]
 pub unsafe fn rank32_10_unchecked(i0: usize) -> Ia<u64> {

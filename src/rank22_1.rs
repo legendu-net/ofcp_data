@@ -217,7 +217,7 @@ pub fn rank22_1(i0: usize) -> &'static [u64; 14] {
     RANK22_1[i0]
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < 52
 #[inline(always)]
 pub unsafe fn rank22_1_unchecked(i0: usize) -> &'static [u64; 14] {

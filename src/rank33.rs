@@ -14,7 +14,7 @@ pub fn rank33_0(i0: usize, i1: usize, i2: usize) -> u64 {
     }
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < i2 < 52
 #[inline(always)]
 pub unsafe fn rank33_0_unchecked(i0: usize, i1: usize, i2: usize) -> u64 {

@@ -5029,7 +5029,7 @@ pub fn rank32_00(i0: usize, i1: usize) -> &'static [u64; 52] {
     RANK32_00[get_index_2(i0, i1)]
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
 pub unsafe fn rank32_00_unchecked(i0: usize, i1: usize) -> &'static [u64; 52] {
