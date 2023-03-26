@@ -90379,7 +90379,7 @@ pub fn rank52_03(i0: usize, i1: usize) -> &'static [u64] {
     RANK52_03[get_index_2(i0, i1)]
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
 pub unsafe fn rank52_03_unchecked(i0: usize, i1: usize) -> &'static [u64] {

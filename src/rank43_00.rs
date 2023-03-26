@@ -26914,7 +26914,7 @@ pub fn rank44_0(i0: usize, i1: usize, i2: usize, i3: usize) -> u64 {
     RANK43_00[get_index_3(i1, i2, i3)][i0]
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < i2 < i3 < 52
 #[inline(always)]
 pub unsafe fn rank44_0_unchecked(i0: usize, i1: usize, i2: usize, i3: usize) -> u64 {

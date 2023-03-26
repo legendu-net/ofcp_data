@@ -712,7 +712,7 @@ pub fn rank22_0(i0: usize, i1: usize) -> u64 {
     RANK21_00[i1][i0]
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < 52
 /// 0 <= i1 < 52
 #[inline(always)]

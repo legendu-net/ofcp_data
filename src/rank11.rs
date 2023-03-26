@@ -75,7 +75,7 @@ pub fn rank11_0(i0: usize) -> u64 {
     RANK11_0[i0]
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < 52
 #[inline(always)]
 pub unsafe fn rank11_0_unchecked(i0: usize) -> u64 {

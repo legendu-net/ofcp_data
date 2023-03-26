@@ -14,7 +14,7 @@ pub fn rank55_0(i0: usize, i1: usize, i2: usize, i3: usize, i4: usize) -> u64 {
     }
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < i2 < i3 < i4 < 52
 #[inline(always)]
 pub unsafe fn rank55_0_unchecked(i0: usize, i1: usize, i2: usize, i3: usize, i4: usize) -> u64 {
@@ -32,7 +32,7 @@ pub fn rank55_1(i0: usize, i1: usize, i2: usize, i3: usize) -> &'static [u64] {
     rank54_01(i0, i1, i2, i3)
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < i2 < i3 < 52
 #[inline(always)]
 pub unsafe fn rank55_1_unchecked(i0: usize, i1: usize, i2: usize, i3: usize) -> &'static [u64] {
@@ -44,7 +44,7 @@ pub fn rank55_2(i0: usize, i1: usize, i2: usize) -> &'static [u64] {
     rank54_11(i0, i1, i2)
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < i2 < 52
 #[inline(always)]
 pub unsafe fn rank55_2_unchecked(i0: usize, i1: usize, i2: usize) -> &'static [u64] {
