@@ -32,7 +32,7 @@ pub fn rank33_1(i0: usize, i1: usize) -> &'static [u64; 14] {
     rank32_01(i0, i1)
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
 pub unsafe fn rank33_1_unchecked(i0: usize, i1: usize) -> &'static [u64; 14] {
@@ -44,7 +44,7 @@ pub fn rank33_2(i0: usize) -> &'static [u64; 92] {
     rank32_11(i0)
 }
 
-/// # Safty
+/// # Safety
 /// 0 <= i0 < 52
 #[inline(always)]
 pub unsafe fn rank33_2_unchecked(i0: usize) -> &'static [u64; 92] {
