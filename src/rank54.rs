@@ -5,16 +5,14 @@ use crate::{
 
 #[inline(always)]
 pub fn rank54_00(i0: usize, i1: usize, i2: usize, i3: usize) -> &'static [u64] {
-    let begin = i3 * 52;
-    &rank53_00(i0, i1, i2)[begin..begin + 52]
+    rank53_00(i0, i1, i2)[i3]
 }
 
 /// # Safety
 /// 0 <= i0 < i1 < i2 < i3 < 52
 #[inline(always)]
 pub unsafe fn rank54_00_unchecked(i0: usize, i1: usize, i2: usize, i3: usize) -> &'static [u64] {
-    let begin = i3 * 52;
-    rank53_00_unchecked(i0, i1, i2).get_unchecked(begin..begin + 52)
+    rank53_00_unchecked(i0, i1, i2).get_unchecked(i3)
 }
 
 #[inline(always)]
