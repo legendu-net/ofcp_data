@@ -17,25 +17,25 @@ pub unsafe fn rank33_0_unchecked(i0: usize, i1: usize, i2: usize) -> u64 {
 }
 
 #[inline(always)]
-pub fn rank33_1(i0: usize, i1: usize) -> &'static [u64; 14] {
+pub fn rank33_1(i0: usize, i1: usize) -> &'static [u64] {
     rank32_01(i0, i1)
 }
 
 /// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
-pub unsafe fn rank33_1_unchecked(i0: usize, i1: usize) -> &'static [u64; 14] {
+pub unsafe fn rank33_1_unchecked(i0: usize, i1: usize) -> &'static [u64] {
     rank32_01_unchecked(i0, i1)
 }
 
 #[inline(always)]
-pub fn rank33_2(i0: usize) -> &'static [u64; 92] {
+pub fn rank33_2(i0: usize) -> &'static [u64] {
     rank32_11(i0)
 }
 
 /// # Safety
 /// 0 <= i0 < 52
 #[inline(always)]
-pub unsafe fn rank33_2_unchecked(i0: usize) -> &'static [u64; 92] {
+pub unsafe fn rank33_2_unchecked(i0: usize) -> &'static [u64] {
     rank32_11_unchecked(i0)
 }
