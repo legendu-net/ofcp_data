@@ -1,3 +1,4 @@
 [env]
-OUT_DIR = "src"
+OUT_DIR = "build_rs_generated"
+#OUT_DIR = "out"
 
