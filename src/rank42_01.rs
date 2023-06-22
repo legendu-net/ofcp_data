@@ -5024,11 +5024,13 @@ static RANK42_01: [&[u64; 52]; 1327] = [
     &_8_12, &_9_10, &_9_11, &_9_12, &_10_11, &_10_12, &_11_12,
 ];
 
+// The LITERAL rank of 4 cards among which there is 1 Joker card.
 #[inline(always)]
 pub fn rank44_1(i0: usize, i1: usize, i2: usize) -> u64 {
     RANK42_01[get_index_2(i1, i2)][i0]
 }
 
+// The LITERAL rank of 4 cards among which there is 1 Joker card.
 /// # Safety
 /// 0 <= i0 < i1 < i2 < 52
 #[inline(always)]
