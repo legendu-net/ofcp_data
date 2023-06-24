@@ -91050,3 +91050,15 @@ static RANK52_03: [&Ranks; 1327] = [
     &_7_11, &_7_12, &_8_9, &_8_10, &_8_11, &_8_12, &_9_10, &_9_11, &_9_12, &_10_11, &_10_12,
     &_11_12,
 ];
+
+#[inline(always)]
+pub fn rank52_03(i0: usize, i1: usize) -> &'static Ranks {
+    RANK52_03[get_index_2(i0, i1)]
+}
+
+/// # Safety
+/// 0 <= i0 < i1 < 52
+#[inline(always)]
+pub unsafe fn rank52_03_unchecked(i0: usize, i1: usize) -> &'static Ranks {
+    RANK52_03.get_unchecked(get_index_2_unchecked(i0, i1))
+}
