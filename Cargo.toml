@@ -3,7 +3,7 @@ name = "ofcp_data"
 description = "Data for ofcp."
 license = "MIT"
 version = "0.21.2"
-edition = "2021"
+edition = "2024"
 
 [lib]
 name = "ofcp_data"
