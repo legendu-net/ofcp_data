@@ -717,6 +717,6 @@ pub fn rank44_2(i0: usize, i1: usize) -> u64 {
 /// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
-pub unsafe fn rank44_2_unchecked(i0: usize, i1: usize) -> u64 {
+pub unsafe fn rank44_2_unchecked(i0: usize, i1: usize) -> u64 { unsafe {
     *RANK42_11.get_unchecked(i1).get_unchecked(i0)
-}
+}}

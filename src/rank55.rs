@@ -12,10 +12,10 @@ pub fn rank55_0(i0: usize, i1: usize, i2: usize, i3: usize, i4: usize) -> u64 {
 /// # Safety
 /// 0 <= i0 < i1 < i2 < i3 < i4 < 52
 #[inline(always)]
-pub unsafe fn rank55_0_unchecked(i0: usize, i1: usize, i2: usize, i3: usize, i4: usize) -> u64 {
+pub unsafe fn rank55_0_unchecked(i0: usize, i1: usize, i2: usize, i3: usize, i4: usize) -> u64 { unsafe {
     let ranks = rank54_00_unchecked(i1, i2, i3, i4);
     *ranks.get_unchecked(i0)
-}
+}}
 
 #[inline(always)]
 pub fn rank55_1(i0: usize, i1: usize, i2: usize, i3: usize) -> &'static Ranks {
@@ -25,9 +25,9 @@ pub fn rank55_1(i0: usize, i1: usize, i2: usize, i3: usize) -> &'static Ranks {
 /// # Safety
 /// 0 <= i0 < i1 < i2 < i3 < 52
 #[inline(always)]
-pub unsafe fn rank55_1_unchecked(i0: usize, i1: usize, i2: usize, i3: usize) -> &'static Ranks {
+pub unsafe fn rank55_1_unchecked(i0: usize, i1: usize, i2: usize, i3: usize) -> &'static Ranks { unsafe {
     rank54_01_unchecked(i0, i1, i2, i3)
-}
+}}
 
 #[inline(always)]
 pub fn rank55_2(i0: usize, i1: usize, i2: usize) -> &'static Ranks {
@@ -37,6 +37,6 @@ pub fn rank55_2(i0: usize, i1: usize, i2: usize) -> &'static Ranks {
 /// # Safety
 /// 0 <= i0 < i1 < i2 < 52
 #[inline(always)]
-pub unsafe fn rank55_2_unchecked(i0: usize, i1: usize, i2: usize) -> &'static Ranks {
+pub unsafe fn rank55_2_unchecked(i0: usize, i1: usize, i2: usize) -> &'static Ranks { unsafe {
     rank54_11_unchecked(i0, i1, i2)
-}
+}}

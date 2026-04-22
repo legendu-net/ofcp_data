@@ -101194,6 +101194,6 @@ pub fn rank53_20(i0: usize) -> &'static A {
 /// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
-pub unsafe fn rank53_20_unchecked(i0: usize) -> &'static A {
+pub unsafe fn rank53_20_unchecked(i0: usize) -> &'static A { unsafe {
     RANK53_20.get_unchecked(i0)
-}
+}}

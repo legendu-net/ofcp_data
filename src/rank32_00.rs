@@ -5017,6 +5017,6 @@ pub fn rank32_00(i0: usize, i1: usize) -> &'static [u64; 52] {
 /// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
-pub unsafe fn rank32_00_unchecked(i0: usize, i1: usize) -> &'static [u64; 52] {
+pub unsafe fn rank32_00_unchecked(i0: usize, i1: usize) -> &'static [u64; 52] { unsafe {
     RANK32_00.get_unchecked(get_index_2_unchecked(i0, i1))
-}
+}}

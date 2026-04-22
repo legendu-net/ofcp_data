@@ -1916,6 +1916,6 @@ pub fn rank32_10(i0: usize) -> &'static A {
 /// # Safety
 /// 0 <= i0 < 52
 #[inline(always)]
-pub unsafe fn rank32_10_unchecked(i0: usize) -> &'static A {
+pub unsafe fn rank32_10_unchecked(i0: usize) -> &'static A { unsafe {
     RANK32_10.get_unchecked(i0)
-}
+}}

@@ -30187,6 +30187,6 @@ pub fn rank51_04(i0: usize) -> &'static Ranks {
 /// # Safety
 /// 0 <= i0 < 52
 #[inline(always)]
-pub unsafe fn rank51_04_unchecked(i0: usize) -> &'static Ranks {
+pub unsafe fn rank51_04_unchecked(i0: usize) -> &'static Ranks { unsafe {
     RANK51_04.get_unchecked(i0)
-}
+}}
