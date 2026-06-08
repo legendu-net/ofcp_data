@@ -10,8 +10,8 @@ pub fn rank53_11(i0: usize, i1: usize) -> &'static [&'static Ranks] {
 /// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
-pub unsafe fn rank53_11_unchecked(i0: usize, i1: usize) -> &'static [&'static Ranks] {
+pub unsafe fn rank53_11_unchecked(i0: usize, i1: usize) -> &'static [&'static Ranks] { unsafe {
     let ranks = rank53_20_unchecked(i0);
     let begin = i1 * 52;
     ranks.get_unchecked(begin..begin + 52)
-}
+}}

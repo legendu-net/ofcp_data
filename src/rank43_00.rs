@@ -26687,8 +26687,8 @@ pub fn rank44_0(i0: usize, i1: usize, i2: usize, i3: usize) -> u64 {
 /// # Safety
 /// 0 <= i0 < i1 < i2 < i3 < 52
 #[inline(always)]
-pub unsafe fn rank44_0_unchecked(i0: usize, i1: usize, i2: usize, i3: usize) -> u64 {
+pub unsafe fn rank44_0_unchecked(i0: usize, i1: usize, i2: usize, i3: usize) -> u64 { unsafe {
     *RANK43_00
         .get_unchecked(get_index_3_unchecked(i1, i2, i3))
         .get_unchecked(i0)
-}
+}}

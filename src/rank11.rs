@@ -84,9 +84,9 @@ pub fn rank11_0(i0: usize) -> u64 {
 /// # Safety
 /// 0 <= i0 < 52
 #[inline(always)]
-pub unsafe fn rank11_0_unchecked(i0: usize) -> u64 {
+pub unsafe fn rank11_0_unchecked(i0: usize) -> u64 { unsafe {
     *RANK11_0.get_unchecked(i0)
-}
+}}
 
 #[inline(always)]
 pub fn rank11_1() -> &'static Ranks {

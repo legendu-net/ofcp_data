@@ -91046,6 +91046,6 @@ pub fn rank52_03(i0: usize, i1: usize) -> &'static Ranks {
 /// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
-pub unsafe fn rank52_03_unchecked(i0: usize, i1: usize) -> &'static Ranks {
+pub unsafe fn rank52_03_unchecked(i0: usize, i1: usize) -> &'static Ranks { unsafe {
     RANK52_03.get_unchecked(get_index_2_unchecked(i0, i1))
-}
+}}

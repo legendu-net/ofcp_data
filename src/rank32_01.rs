@@ -8,6 +8,6 @@ pub fn rank32_01(i0: usize, i1: usize) -> &'static Ranks {
 /// # Safety
 /// 0 <= i0 < i1 < 52
 #[inline(always)]
-pub unsafe fn rank32_01_unchecked(i0: usize, i1: usize) -> &'static Ranks {
+pub unsafe fn rank32_01_unchecked(i0: usize, i1: usize) -> &'static Ranks { unsafe {
     rank32_10_unchecked(i0).get_unchecked(i1)
-}
+}}
